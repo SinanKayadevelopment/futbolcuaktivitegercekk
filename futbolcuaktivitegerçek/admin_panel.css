@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.message {
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+a.update {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+}
+
+a.update:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+a.delete {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+}
+
+a.delete:hover {
+    background-color: #dc3545;
+    color: white;
+}

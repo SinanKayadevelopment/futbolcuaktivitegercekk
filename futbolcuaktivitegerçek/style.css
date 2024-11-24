@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cart-popup {
+    position: absolute;
+    top: 50px; /* Sepet ikonunun hemen altında görünmesi için */
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#cart-popup .cart-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#cart-popup button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#cart-popup button:hover {
+    background-color: #0056b3;
+}
+
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 215, 0), rgb(0, 0, 128)); 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 70px; 
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+}
+.card {
+    width: 250px; 
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+.banner {
+    position: relative;
+    display: inline-block;
+}
+
+.slogan-resim {
+    width: 100%; 
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 3em; 
+    font-weight: bold;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    height: 300px;
+}
+
+.banner .futbolcu-resim {
+    flex: 0 0 20%; 
+}
+
+.banner .futbolcu-resim img {
+    width: 100%; 
+    height: 300px;
+}
+
+.banner .slogan-resim {
+    flex: 0 0 60%;
+}
+
+.banner .slogan-resim img {
+    width: 100%;
+    height: 300px;
+}
+
+.futbolcular {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-size: cover;
+}
+
+.futbolcu-karti {
+    border: 1px solid #000;
+    padding: 15px;
+    width: 300px;
+    background-size: cover;
+    text-align: center;
+}
+
+.futbolcu-karti img {
+    width: 100%;
+    background-size: cover;
+}
+
+.futbolcu-adi {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.futbolcu-opsiyonlari button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.futbolcu-opsiyonlari button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.section-title {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.section-title h2 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #000; 
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+    width: 80%; 
+    max-width: 800px; 
+    margin: 10% auto; 
+    border-radius: 10px; 
+}
+
+.modal-inner {
+    display: flex; 
+}
+
+.modal-image {
+    flex: 1; 
+    height: auto; 
+}
+
+.modal-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+
+.modal-form {
+    flex: 1; 
+    padding: 20px;
+    background-color: white; 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px; 
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-align: center; 
+}
+
+label {
+    display: block; 
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #007bff;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+#sepet-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#sepet-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: -8px;
+    font-size: 12px;
+}
+
+.cart-popup {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.cart-content {
+    padding: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cart-content button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-content button:hover {
+    background-color: #0056b3;
+}
+.player-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.arda-guler {
+    background-color: #ffe0b2; 
+    color: #333;
+}
+
+.ferdi-kadioglu {
+    background-color: #cce7ff; 
+    color: #333;
+}
